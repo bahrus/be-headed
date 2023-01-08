@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "playwright test",
+    "serve": "node node_modules/may-it-serve/serve.js",
+    "package-check": "package-check"
   },
   "dependencies": {
     "be-one-and-only": "0.0.2"

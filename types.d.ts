@@ -4,9 +4,7 @@ import {
     Actions as BeOneAndOnlyActions
 } from 'be-one-and-only/types';
 
-export interface EndUserProps extends BeOneAndOnlyEndUserProps{
-    targetSelector: string,
-}
+export interface EndUserProps extends BeOneAndOnlyEndUserProps{}
 
 export interface VirtualProps extends EndUserProps, BeOneAndOnlyVirtualProps{}
 
