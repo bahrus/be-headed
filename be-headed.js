@@ -1,4 +1,4 @@
-import { BeOneAndOnly, virtualProps } from 'be-one-and-only/be-one-and-only.js';
+import { BeOneAndOnly, virtualProps, actions } from 'be-one-and-only/be-one-and-only.js';
 import { define } from 'be-decorated/DE.js';
 import { register } from 'be-hive/register.js';
 export class BeHeaded extends BeOneAndOnly {
@@ -19,9 +19,7 @@ define({
             virtualProps,
             primaryProp: 'id',
         },
-        actions: {
-            beBornIfTheOne: 'id'
-        }
+        actions
     },
     complexPropDefaults: {
         controller: BeHeaded

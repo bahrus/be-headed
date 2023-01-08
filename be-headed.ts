@@ -1,4 +1,4 @@
-import {BeOneAndOnly, virtualProps} from 'be-one-and-only/be-one-and-only.js';
+import {BeOneAndOnly, virtualProps, actions} from 'be-one-and-only/be-one-and-only.js';
 import { PP, VirtualProps, Actions } from './types';
 import {define, BeDecoratedProps} from 'be-decorated/DE.js';
 import {register} from 'be-hive/register.js';
@@ -24,9 +24,7 @@ define<PP & BeDecoratedProps<PP, Actions>, Actions>({
             virtualProps,
             primaryProp: 'id',
         },
-        actions: {
-            beBornIfTheOne: 'id'
-        }
+        actions
     },
     complexPropDefaults:{
         controller: BeHeaded
